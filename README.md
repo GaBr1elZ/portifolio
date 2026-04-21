@@ -35,10 +35,12 @@ Como o projeto é construído estaticamente (Client-side), não há necessidade 
 
 ## 📬 Contato
 
+- - **Link do Portifólio**:  https://portifolio-theta-two-49.vercel.app/index.html#projects
 - **LinkedIn**: [Gabriel Machado Calegari](https://www.linkedin.com/in/gabriel-machado-calegari-7691701b6/)
 - **GitHub**: [GaBr1elZ](https://github.com/GaBr1elZ)
 - **E-mail**: gabrielmachadocalegari@hotmail.com
 - **WhatsApp**: +55 (19) 99362-9098
+
 
 ---
 *Construído com código e dedicação.*
