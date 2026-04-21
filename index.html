@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio Pessoal de Gabriel - Desenvolvedor com foco em React, React Native, Node e TypeScript.">
+    <title>Gabriel | Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Header / Nav -->
+    <header>
+        <nav class="glass-nav">
+            <div class="logo">
+                <span class="highlight">&lt;</span>Gabriel<span class="highlight">/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact" class="btn-outline">Contato</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="greeting">Olá, eu sou</p>
+                <h1 class="glitch-text" data-text="Gabriel">Gabriel</h1>
+                <h2 class="typewriter"><span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+                <p class="description">
+                    Especialista em construir experiências web e mobile modernas e de alta performance.
+                    Transformando ideias em interfaces dinâmicas e escaláveis.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn-secondary">Fale Comigo</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card profile-card">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-content">
+                            <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">'Gabriel'</span>,
+  <span class="property">focus</span>: [<span class="string">'React'</span>, <span class="string">'React Native'</span>],
+  <span class="property">backend</span>: <span class="string">'Node.js'</span>,
+  <span class="property">language</span>: <span class="string">'TypeScript'</span>,
+  <span class="property">passion</span>: <span class="string">'Building Awesome UI/UX'</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-container">
+                <div class="glass-card about-text">
+                    <p>Desenvolvedor Full-Stack com foco em React, com experiência na construção e manutenção de
+                        interfaces web para sistemas
+                        empresariais. Atuo no desenvolvimento de dashboards, fluxos de interface e funcionalidades
+                        integradas a APIs REST utilizando JavaScript (ES6+), HTML e CSS. Atualmente contribuo para a
+                        modernização de uma plataforma de atendimento
+                        omnichannel, participando da migração gradual da interface construída em jQuery e Bootstrap para
+                        uma arquitetura baseada em React e componentização.</p>
+                    <p>Tenho experiência na construção de
+                        interfaces responsivas, organização e visualização de
+                        dados em dashboards e integração com APIs. Busco evoluir tecnicamente em projetos com React e
+                        tecnologias modernas de
+                        frontend, contribuindo com soluções eficientes e orientadas à experiência do usuário.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="glass-card stat-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Full Stack</h3>
+                        <p>Desenvolvimento End-to-End</p>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile First</h3>
+                        <p>Experiências Responsivas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <h2 class="section-title">Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <div class="glass-card skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="glass-card skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React Native</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="glass-card skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="glass-card skill-card">
+                    <i class="fa-brands fa-square-js"></i>
+                    <h3>TypeScript / JS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <h2 class="section-title">Projetos Recentes</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="glass-card project-card">
+                    <div class="project-image project-img-1">
+                        <div class="project-links">
+                            <a href="projeto-tcc.html" class="icon-link" title="Ver Detalhes"><i
+                                    class="fas fa-info-circle"></i></a>
+                            <a href="https://github.com/GaBr1elZ/TccVinicola" target="_blank" class="icon-link"
+                                title="Repositório GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Trabalho de Conclusão de Curso (TCC)</h3>
+                        <p>Uma aplicação full-stack desenvolvida como meu projeto final, focada em resolver desafios
+                            complexos com arquitetura moderna.</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>TypeScript</span>
+                        </div>
+                        <a href="projeto-tcc.html" class="btn-outline"
+                            style="margin-top: 15px; text-align: center; border-radius: 8px; padding: 5px;">Ler Estudo
+                            de Caso</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card project-card">
+                    <div class="project-image project-img-2"
+                        style="background: linear-gradient(135deg, #11998e 0%, #8e2de2 100%);">
+                        <div class="project-links">
+                            <a href="projeto-cloudchat.html" class="icon-link" title="Ver Detalhes"><i
+                                    class="fas fa-info-circle"></i></a>
+                            <a href="#" class="icon-link" title="Repositório Privado"><i class="fas fa-lock"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CloudChat - Livechat Dashboard</h3>
+                        <p>Plataforma de livechat em tempo real para atendimento ao cliente. Arquitetura híbrida com
+                            comunicação bidirecional via WebSockets (Socket.IO), cache ultrarrápido em Redis e
+                            persistência com PostgreSQL (Prisma).</p>
+                        <div class="tech-tags" style="margin-bottom: 15px;">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Socket.IO</span>
+                            <span>Redis</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="projeto-cloudchat.html" class="btn-outline"
+                            style="margin-top: auto; text-align: center; border-radius: 8px; padding: 5px;">Ler Estudo
+                            de Caso</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <h2 class="section-title">Vamos Conversar?</h2>
+            <div class="glass-card contact-card">
+                <div class="contact-info">
+                    <h3>Entre em Contato</h3>
+                    <p>Estou sempre aberto a discutir desenvolvimento de produtos, novas ideias ou oportunidades.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/gabriel-machado-calegari-7691701b6/" target="_blank"
+                            class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/GaBr1elZ" target="_blank" class="social-icon" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="mailto:gabrielmachadocalegari@hotmail.com" target="_blank" class="social-icon"
+                            title="E-mail"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/5519993629098" target="_blank" class="social-icon"
+                            title="WhatsApp (+55 19 99362-9098)"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gabriel. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
