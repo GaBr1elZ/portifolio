@@ -183,6 +183,47 @@ header {
     cursor: pointer;
 }
 
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    margin-left: 15px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: inherit;
+}
+
+.lang-btn:hover {
+    color: var(--text-primary);
+}
+
+.lang-btn.active {
+    color: var(--accent);
+}
+
+.lang-separator {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.lang-switcher-mobile {
+    display: none;
+}
+
 /* Buttons */
 .btn-primary,
 .btn-secondary {
@@ -729,6 +770,20 @@ footer {
 
     .hero-buttons a {
         text-align: center;
+    }
+
+    .lang-switcher {
+        display: none;
+    }
+    
+    .lang-switcher-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid var(--glass-border);
     }
 }
 

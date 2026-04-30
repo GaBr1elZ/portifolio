@@ -122,10 +122,23 @@
                 <span class="highlight">&lt;</span>Gabriel<span class="highlight">/&gt;</span>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="index.html#projects">Voltar para Projetos</a></li>
-                <li><a href="index.html#contact" class="btn-outline">Contato</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Início</a></li>
+                <li><a href="index.html#projects" data-i18n="nav_back_projects">Voltar para Projetos</a></li>
+                <li><a href="index.html#contact" class="btn-outline" data-i18n="nav_contact">Contato</a></li>
+                <li class="lang-switcher-mobile">
+                    <button class="lang-btn active" data-lang="pt" onclick="switchLanguage('pt')">PT</button>
+                    <span class="lang-separator">|</span>
+                    <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">EN</button>
+                </li>
             </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="pt" onclick="switchLanguage('pt')">PT</button>
+                <span class="lang-separator">|</span>
+                <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">EN</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
@@ -133,10 +146,10 @@
         <!-- Project Hero Section -->
         <section class="project-hero">
             <div class="hero-content fade-in visible">
-                <h1 class="project-title">CloudChat - Livechat Dashboard</h1>
+                <h1 class="project-title" data-i18n="project2_title">CloudChat - Livechat Dashboard</h1>
                 <div class="project-meta">
                     <span><i class="far fa-calendar-alt"></i> 2026</span>
-                    <span><i class="fas fa-laptop-code"></i> Plataforma SaaS</span>
+                    <span><i class="fas fa-laptop-code"></i> <span data-i18n="cloudchat_meta_saas">Plataforma SaaS</span></span>
                 </div>
                 <div class="tech-tags" style="justify-content: center; margin-bottom: 30px;">
                     <span>React</span>
@@ -146,9 +159,8 @@
                     <span>PostgreSQL</span>
                 </div>
                 <div class="hero-buttons" style="justify-content: center;">
-                    <a href="#" class="btn-primary" title="Repositório Privado"><i class="fas fa-lock"></i> Código
-                        Fechado</a>
-                    <a href="#detalhes" class="btn-secondary">Ler Estudo de Caso</a>
+                    <a href="#" class="btn-primary" title="Repositório Privado"><i class="fas fa-lock"></i> <span data-i18n="cloudchat_btn_code">Código Fechado</span></a>
+                    <a href="#detalhes" class="btn-secondary" data-i18n="project_btn_case">Ler Estudo de Caso</a>
                 </div>
             </div>
         </section>
@@ -156,19 +168,13 @@
         <!-- Project Content -->
         <section id="detalhes" class="section-padding">
             <div class="content-section">
-                <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> Voltar para o
-                    Portfólio</a>
+                <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> <span data-i18n="cloudchat_back">Voltar para o Portfólio</span></a>
 
                 <div class="glass-card content-block fade-in">
-                    <h3><i class="fas fa-exclamation-circle"></i> O Problema</h3>
-                    <p>Muitas plataformas de atendimento ao cliente (como chatbots de WhatsApp) focam inteiramente na
-                        automação por bots e carecem de uma interface intuitiva para o transbordo humano.</p>
-                    <p>O desafio do CloudChat era evoluir um simples dashboard de estatísticas para uma plataforma
-                        completa de Livechat em tempo real. Era necessário permitir que atendentes reais pudessem
-                        assumir conversas de bots instantaneamente, visualizando o histórico e conversando com o cliente
-                        pelo WhatsApp de forma fluida.</p>
-                    <p>Além disso, o painel original precisava ser modernizado para lidar com milhares de requisições
-                        concorrentes, entregando mensagens sem delay de rede (Real-time bidirecional).</p>
+                    <h3 data-i18n="cloudchat_prob_title"><i class="fas fa-exclamation-circle"></i> O Problema</h3>
+                    <p data-i18n="cloudchat_prob_p1">Muitas plataformas de atendimento ao cliente (como chatbots de WhatsApp) focam inteiramente na automação por bots e carecem de uma interface intuitiva para o transbordo humano.</p>
+                    <p data-i18n="cloudchat_prob_p2">O desafio do CloudChat era evoluir um simples dashboard de estatísticas para uma plataforma completa de Livechat em tempo real. Era necessário permitir que atendentes reais pudessem assumir conversas de bots instantaneamente, visualizando o histórico e conversando com o cliente pelo WhatsApp de forma fluida.</p>
+                    <p data-i18n="cloudchat_prob_p3">Além disso, o painel original precisava ser modernizado para lidar com milhares de requisições concorrentes, entregando mensagens sem delay de rede (Real-time bidirecional).</p>
                 </div>
 
                 <div class="app-gallery fade-in">
@@ -215,121 +221,66 @@
                 </style>
 
                 <div class="glass-card content-block fade-in">
-                    <h3><i class="fas fa-lightbulb"></i> A Solução</h3>
-                    <p>A solução envolveu uma migração arquitetural completa para a separação do Front-end (React) e
-                        Back-end (Node.js).</p>
-                    <p>Implementei o <strong>Socket.IO</strong> para garantir um canal de comunicação via WebSocket
-                        ativo e persistente, permitindo o recebimento instantâneo das mensagens provenientes das APIs
-                        oficiais do WhatsApp direto na tela do agente.</p>
-                    <p>Para o armazenamento inteligente de informações e alta disponibilidade, utilizei uma abordagem
-                        híbrida de banco de dados:</p>
+                    <h3 data-i18n="cloudchat_sol_title"><i class="fas fa-lightbulb"></i> A Solução</h3>
+                    <p data-i18n="cloudchat_sol_p1">A solução envolveu uma migração arquitetural completa para a separação do Front-end (React) e Back-end (Node.js).</p>
+                    <p data-i18n="cloudchat_sol_p2">Implementei o <strong>Socket.IO</strong> para garantir um canal de comunicação via WebSocket ativo e persistente, permitindo o recebimento instantâneo das mensagens provenientes das APIs oficiais do WhatsApp direto na tela do agente.</p>
+                    <p data-i18n="cloudchat_sol_p3">Para o armazenamento inteligente de informações e alta disponibilidade, utilizei uma abordagem híbrida de banco de dados:</p>
                     <ul>
-                        <li style="color: var(--text-secondary); margin-bottom: 10px; margin-left: 20px;"><b>Redis (Em
-                                Memória):</b> Utilizado como cache principal para armazenar conversas ativas e sessões,
-                            diminuindo o tempo de resposta das consultas do frontend.</li>
-                        <li style="color: var(--text-secondary); margin-bottom: 10px; margin-left: 20px;"><b>PostgreSQL
-                                (Prisma ORM):</b> Banco relacional principal para persistência histórica (mensagens
-                            antigas, leads, agendamentos).</li>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; margin-left: 20px;" data-i18n="cloudchat_sol_li1"><b>Redis (Em Memória):</b> Utilizado como cache principal para armazenar conversas ativas e sessões, diminuindo o tempo de resposta das consultas do frontend.</li>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; margin-left: 20px;" data-i18n="cloudchat_sol_li2"><b>PostgreSQL (Prisma ORM):</b> Banco relacional principal para persistência histórica (mensagens antigas, leads, agendamentos).</li>
                     </ul>
                 </div>
 
                 <div class="glass-card content-block fade-in">
-                    <h3><i class="fas fa-cogs"></i> Arquitetura e Desafios Técnicos</h3>
-                    <p>Modernizar um sistema para uma plataforma real-time de alto tráfego trouxe desafios técnicos
-                        significativos.</p>
+                    <h3 data-i18n="cloudchat_arch_title"><i class="fas fa-cogs"></i> Arquitetura e Desafios Técnicos</h3>
+                    <p data-i18n="cloudchat_arch_p1">Modernizar um sistema para uma plataforma real-time de alto tráfego trouxe desafios técnicos significativos.</p>
 
-                    <h4 style="color: var(--text-primary); margin-top: 20px; margin-bottom: 15px; font-size: 1.2rem;">
-                        Principais decisões técnicas:</h4>
+                    <h4 style="color: var(--text-primary); margin-top: 20px; margin-bottom: 15px; font-size: 1.2rem;" data-i18n="cloudchat_arch_sub1">Principais decisões técnicas:</h4>
                     <ul style="list-style-type: none; padding-left: 0;">
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-check"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Migração
-                                do layout antigo mantendo a paleta de cores original (verde e roxo) com estética moderna
-                                (Glassmorphism).</span></li>
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-check"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Adoção
-                                do Docker para orquestrar serviços do Redis e PostgreSQL localmente de forma
-                                isolada.</span></li>
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-check"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Uso
-                                do Prisma ORM para facilitar as consultas e garantir o Data Integrity no
-                                PostgreSQL.</span></li>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-check" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="cloudchat_arch_dec1">Migração do layout antigo mantendo a paleta de cores original (verde e roxo) com estética moderna (Glassmorphism).</span></li>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-check" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="cloudchat_arch_dec2">Adoção do Docker para orquestrar serviços do Redis e PostgreSQL localmente de forma isolada.</span></li>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-check" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="cloudchat_arch_dec3">Uso do Prisma ORM para facilitar as consultas e garantir o Data Integrity no PostgreSQL.</span></li>
                     </ul>
 
-                    <h4 style="color: var(--text-primary); margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;">
-                        Desafios enfrentados:</h4>
+                    <h4 style="color: var(--text-primary); margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;" data-i18n="cloudchat_arch_sub2">Desafios enfrentados:</h4>
                     <div style="display: flex; flex-direction: column; gap: 15px;">
-                        <div
-                            style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
-                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;">1. Conexões
-                                Concorrentes no Redis</strong>
-                            <span style="color: var(--text-secondary);">Foi identificado o erro ECONNREFUSED ao tentar
-                                acessar o Redis nas primeiras implementações devido a configurações do Docker
-                                Virtualization.<br><span style="color: var(--accent); font-weight: 600;">→
-                                    Solução:</span> Correção das flags de hardware virtualization na BIOS e habilitação
-                                do WSL2.</span>
+                        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;" data-i18n="cloudchat_arch_chal1_title">1. Conexões Concorrentes no Redis</strong>
+                            <span style="color: var(--text-secondary);" data-i18n="cloudchat_arch_chal1_desc">Foi identificado o erro ECONNREFUSED ao tentar acessar o Redis nas primeiras implementações devido a configurações do Docker Virtualization.<br><span style="color: var(--accent); font-weight: 600;">→ Solução:</span> Correção das flags de hardware virtualization na BIOS e habilitação do WSL2.</span>
                         </div>
-                        <div
-                            style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
-                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;">2. Ordenação
-                                de Threads (Chat List)</strong>
-                            <span style="color: var(--text-secondary);">Era necessário que a conversa mais recente na
-                                tela de livechat sempre saltasse para o topo automaticamente, sem recarregar a
-                                página.<br><span style="color: var(--accent); font-weight: 600;">→ Solução:</span>
-                                Implementei a propriedade dinâmica "lastTime" monitorada via WebSockets no React para
-                                reordenar o componente dinamicamente.</span>
+                        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;" data-i18n="cloudchat_arch_chal2_title">2. Ordenação de Threads (Chat List)</strong>
+                            <span style="color: var(--text-secondary);" data-i18n="cloudchat_arch_chal2_desc">Era necessário que a conversa mais recente na tela de livechat sempre saltasse para o topo automaticamente, sem recarregar a página.<br><span style="color: var(--accent); font-weight: 600;">→ Solução:</span> Implementei a propriedade dinâmica "lastTime" monitorada via WebSockets no React para reordenar o componente dinamicamente.</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="glass-card content-block fade-in"
                     style="border-color: var(--accent); background: rgba(0, 242, 254, 0.05);">
-                    <h3 style="color: var(--text-primary);"><i class="fas fa-trophy" style="color: var(--accent);"></i>
-                        Resultados e Conclusão</h3>
+                    <h3 style="color: var(--text-primary);" data-i18n="cloudchat_res_title"><i class="fas fa-trophy" style="color: var(--accent);"></i> Resultados e Conclusão</h3>
 
-                    <p style="margin-bottom: 15px;">A evolução para o novo CloudChat entregou uma plataforma robusta
-                        capaz de lidar com picos de atendimento.</p>
+                    <p style="margin-bottom: 15px;" data-i18n="cloudchat_res_p1">A evolução para o novo CloudChat entregou uma plataforma robusta capaz de lidar com picos de atendimento.</p>
 
-                    <ul
-                        style="list-style-type: none; padding-left: 0; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap;">
-                        <li
-                            style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
-                            <i class="fas fa-bolt" style="color: #FFD700; margin-right: 8px;"></i>Latência quase zero
-                            via WebSockets</li>
-                        <li
-                            style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
-                            <i class="fas fa-database" style="color: #FFD700; margin-right: 8px;"></i>Alta
-                            Disponibilidade (Redis)</li>
-                        <li
-                            style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
-                            <i class="fas fa-paint-brush" style="color: #FFD700; margin-right: 8px;"></i>UX Moderna e
-                            Fluida</li>
+                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <li style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
+                            <i class="fas fa-bolt" style="color: #FFD700; margin-right: 8px;"></i><span data-i18n="cloudchat_res_li1">Latência quase zero via WebSockets</span></li>
+                        <li style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
+                            <i class="fas fa-database" style="color: #FFD700; margin-right: 8px;"></i><span data-i18n="cloudchat_res_li2">Alta Disponibilidade (Redis)</span></li>
+                        <li style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
+                            <i class="fas fa-paint-brush" style="color: #FFD700; margin-right: 8px;"></i><span data-i18n="cloudchat_res_li3">UX Moderna e Fluida</span></li>
                     </ul>
 
-                    <h4 style="color: var(--text-primary); margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;">
-                        Principais aprendizados:</h4>
+                    <h4 style="color: var(--text-primary); margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;" data-i18n="cloudchat_res_sub">Principais aprendizados:</h4>
                     <ul style="list-style-type: none; padding-left: 0; margin-bottom: 20px;">
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-graduation-cap"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Orquestração
-                                de Containers com Docker e ecossistema WSL2.</span></li>
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-graduation-cap"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Gerenciamento
-                                avançado de cache em memória (Redis) integrado com bancos relacionais
-                                (PostgreSQL).</span></li>
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-graduation-cap"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Comunicação
-                                bidirecional e assíncrona usando WebSockets para chat real-time.</span></li>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-graduation-cap" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="cloudchat_res_learn1">Orquestração de Containers com Docker e ecossistema WSL2.</span></li>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-graduation-cap" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="cloudchat_res_learn2">Gerenciamento avançado de cache em memória (Redis) integrado com bancos relacionais (PostgreSQL).</span></li>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-graduation-cap" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="cloudchat_res_learn3">Comunicação bidirecional e assíncrona usando WebSockets para chat real-time.</span></li>
                     </ul>
                 </div>
 
@@ -338,8 +289,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Gabriel. Todos os direitos reservados.</p>
+        <p data-i18n="footer_text">&copy; 2026 Gabriel. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
 
     <!-- Use the same script for animations -->
     <script>

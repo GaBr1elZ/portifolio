@@ -1,15 +1,15 @@
+// --- Typewriter Data ---
+const typeWriterData = {
+    pt: ["Desenvolvedor Full Stack.", "Especialista em React.", "Criador de Apps Mobile.", "Entusiasta de UI/UX."],
+    en: ["Full Stack Developer.", "React Specialist.", "Mobile App Creator.", "UI/UX Enthusiast."]
+};
+
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // --- Typewriter Effect ---
     const typedTextSpan = document.querySelector(".typed-text");
     const cursorSpan = document.querySelector(".cursor");
 
-    const textArray = [
-        "Desenvolvedor Full Stack.", 
-        "Especialista em React.", 
-        "Criador de Apps Mobile.", 
-        "Entusiasta de UI/UX."
-    ];
     const typingDelay = 100;
     const erasingDelay = 50;
     const newTextDelay = 2000; // Delay between current and next text
@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let charIndex = 0;
 
     function type() {
+        const textArray = typeWriterData[currentLang];
+        if (!typedTextSpan || !cursorSpan) return;
+
         if (charIndex < textArray[textArrayIndex].length) {
             if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
             typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
@@ -30,6 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function erase() {
+        const textArray = typeWriterData[currentLang];
+        if (!typedTextSpan || !cursorSpan) return;
+
         if (charIndex > 0) {
             if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
             typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
@@ -44,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    if(textArray.length) setTimeout(type, newTextDelay + 250);
+    if(typedTextSpan && cursorSpan) setTimeout(type, newTextDelay + 250);
 
     // --- Scroll Animations (Intersection Observer) ---
     const fadeElements = document.querySelectorAll('.section-padding h2, .glass-card, .skills-grid, .projects-grid');

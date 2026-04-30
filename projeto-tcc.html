@@ -122,10 +122,23 @@
                 <span class="highlight">&lt;</span>Gabriel<span class="highlight">/&gt;</span>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="index.html#projects">Voltar para Projetos</a></li>
-                <li><a href="index.html#contact" class="btn-outline">Contato</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Início</a></li>
+                <li><a href="index.html#projects" data-i18n="nav_back_projects">Voltar para Projetos</a></li>
+                <li><a href="index.html#contact" class="btn-outline" data-i18n="nav_contact">Contato</a></li>
+                <li class="lang-switcher-mobile">
+                    <button class="lang-btn active" data-lang="pt" onclick="switchLanguage('pt')">PT</button>
+                    <span class="lang-separator">|</span>
+                    <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">EN</button>
+                </li>
             </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="pt" onclick="switchLanguage('pt')">PT</button>
+                <span class="lang-separator">|</span>
+                <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">EN</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
@@ -133,10 +146,10 @@
         <!-- Project Hero Section -->
         <section class="project-hero">
             <div class="hero-content fade-in visible">
-                <h1 class="project-title">Trabalho de Conclusão de Curso</h1>
+                <h1 class="project-title" data-i18n="project1_title">Trabalho de Conclusão de Curso</h1>
                 <div class="project-meta">
                     <span><i class="far fa-calendar-alt"></i> 2026</span>
-                    <span><i class="fas fa-university"></i> TCC Universitário</span>
+                    <span><i class="fas fa-university"></i> <span data-i18n="tcc_meta_univ">TCC Universitário</span></span>
                 </div>
                 <div class="tech-tags" style="justify-content: center; margin-bottom: 30px;">
                     <span>React Native</span>
@@ -145,9 +158,8 @@
                     <span>PostgreSQL</span>
                 </div>
                 <div class="hero-buttons" style="justify-content: center;">
-                    <a href="https://github.com/GaBr1elZ/TccVinicola" target="_blank" class="btn-primary"><i
-                            class="fab fa-github"></i> Ver Código Fonte</a>
-                    <a href="#detalhes" class="btn-secondary">Ler Estudo de Caso</a>
+                    <a href="https://github.com/GaBr1elZ/TccVinicola" target="_blank" class="btn-primary"><i class="fab fa-github"></i> <span data-i18n="tcc_btn_code">Ver Código Fonte</span></a>
+                    <a href="#detalhes" class="btn-secondary" data-i18n="project_btn_case">Ler Estudo de Caso</a>
                 </div>
             </div>
         </section>
@@ -155,21 +167,13 @@
         <!-- Project Content -->
         <section id="detalhes" class="section-padding">
             <div class="content-section">
-                <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> Voltar para o
-                    Portfólio</a>
+                <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> <span data-i18n="cloudchat_back">Voltar para o Portfólio</span></a>
 
                 <div class="glass-card content-block fade-in">
-                    <h3><i class="fas fa-exclamation-circle"></i> O Problema</h3>
-                    <p>O setor de enoturismo em Espírito Santo do Pinhal apresenta um grande potencial turístico, com um
-                        fluxo significativo de visitantes interessados em vinicultura. No entanto, foi identificado que
-                        muitos turistas enfrentam dificuldades para acessar informações organizadas sobre as vinícolas
-                        locais, como descrições, imagens e experiências disponíveis</p>
-                    <p>Apesar da popularização dos smartphones, o acesso a essas informações ainda não era centralizado,
-                        intuitivo ou imediato durante a visita. Muitas vezes, o visitante precisava buscar manualmente
-                        por dados na internet, o que prejudicava a experiência e diminuía o engajamento com os pontos
-                        turísticos.</p>
-                    <p>Diante desse cenário, surgiu a necessidade de uma solução que facilitasse o acesso rápido,
-                        prático e interativo às informações das vinícolas, diretamente no momento da visita.</p>
+                    <h3 data-i18n="cloudchat_prob_title"><i class="fas fa-exclamation-circle"></i> O Problema</h3>
+                    <p data-i18n="tcc_prob_p1">O setor de enoturismo em Espírito Santo do Pinhal apresenta um grande potencial turístico, com um fluxo significativo de visitantes interessados em vinicultura. No entanto, foi identificado que muitos turistas enfrentam dificuldades para acessar informações organizadas sobre as vinícolas locais, como descrições, imagens e experiências disponíveis</p>
+                    <p data-i18n="tcc_prob_p2">Apesar da popularização dos smartphones, o acesso a essas informações ainda não era centralizado, intuitivo ou imediato durante a visita. Muitas vezes, o visitante precisava buscar manualmente por dados na internet, o que prejudicava a experiência e diminuía o engajamento com os pontos turísticos.</p>
+                    <p data-i18n="tcc_prob_p3">Diante desse cenário, surgiu a necessidade de uma solução que facilitasse o acesso rápido, prático e interativo às informações das vinícolas, diretamente no momento da visita.</p>
                 </div>
 
                 <div class="app-gallery fade-in">
@@ -219,178 +223,105 @@
                 </style>
 
                 <div class="glass-card content-block fade-in">
-                    <h3><i class="fas fa-lightbulb"></i> A Solução</h3>
-                    <p>Para resolver esse problema, foi desenvolvido um aplicativo mobile voltado ao enoturismo,
-                        utilizando leitura de QR Code para disponibilizar informações de forma rápida e intuitiva.</p>
-                    <p>Ao escanear um QR Code presente nos pontos turísticos, o usuário é direcionado automaticamente
-                        para uma tela com:</p>
+                    <h3 data-i18n="cloudchat_sol_title"><i class="fas fa-lightbulb"></i> A Solução</h3>
+                    <p data-i18n="tcc_sol_p1">Para resolver esse problema, foi desenvolvido um aplicativo mobile voltado ao enoturismo, utilizando leitura de QR Code para disponibilizar informações de forma rápida e intuitiva.</p>
+                    <p data-i18n="tcc_sol_p2">Ao escanear um QR Code presente nos pontos turísticos, o usuário é direcionado automaticamente para uma tela com:</p>
                     <ul>
-                        <li style="color: var(--text-secondary); margin-bottom: 10px; margin-left: 20px;">Descrição da
-                            vinícola</li>
-                        <li style="color: var(--text-secondary); margin-bottom: 10px; margin-left: 20px;">Carrossel de
-                            imagens</li>
-                        <li style="color: var(--text-secondary); margin-bottom: 10px; margin-left: 20px;">Informações
-                            relevantes sobre o local</li>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; margin-left: 20px;" data-i18n="tcc_sol_li1">Descrição da vinícola</li>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; margin-left: 20px;" data-i18n="tcc_sol_li2">Carrossel de imagens</li>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; margin-left: 20px;" data-i18n="tcc_sol_li3">Informações relevantes sobre o local</li>
                     </ul>
-                    <p>A aplicação foi construída com React Native, permitindo compatibilidade com Android e iOS a
-                        partir de uma única base de código.</p>
-                    <p>No backend, foi utilizada uma API desenvolvida com Node.js e TypeScript, responsável por
-                        gerenciar
-                        as requisições, organizar os dados e garantir maior segurança e tipagem no sistema. O
-                        armazenamento
-                        das informações foi realizado utilizando MySQL, estruturando os dados de forma eficiente e
-                        escalável.</p>
-                    <p>O resultado é uma experiência simples, rápida e acessível, melhorando significativamente a
-                        interação do turista com o ambiente.</p>
+                    <p data-i18n="tcc_sol_p3">A aplicação foi construída com React Native, permitindo compatibilidade com Android e iOS a partir de uma única base de código.</p>
+                    <p data-i18n="tcc_sol_p4">No backend, foi utilizada uma API desenvolvida com Node.js e TypeScript, responsável por gerenciar as requisições, organizar os dados e garantir maior segurança e tipagem no sistema. O armazenamento das informações foi realizado utilizando MySQL, estruturando os dados de forma eficiente e escalável.</p>
+                    <p data-i18n="tcc_sol_p5">O resultado é uma experiência simples, rápida e acessível, melhorando significativamente a interação do turista com o ambiente.</p>
                 </div>
 
                 <div class="glass-card content-block fade-in">
-                    <h3><i class="fas fa-cogs"></i> Arquitetura e Desafios Técnicos</h3>
-                    <p>O projeto foi desenvolvido seguindo uma arquitetura cliente-servidor, onde o aplicativo mobile
-                        consome dados de uma API backend.</p>
+                    <h3 data-i18n="cloudchat_arch_title"><i class="fas fa-cogs"></i> Arquitetura e Desafios Técnicos</h3>
+                    <p data-i18n="tcc_arch_p1">O projeto foi desenvolvido seguindo uma arquitetura cliente-servidor, onde o aplicativo mobile consome dados de uma API backend.</p>
 
-                    <h4 style="color: var(--text-primary); margin-top: 20px; margin-bottom: 15px; font-size: 1.2rem;">
-                        Principais decisões técnicas:</h4>
+                    <h4 style="color: var(--text-primary); margin-top: 20px; margin-bottom: 15px; font-size: 1.2rem;" data-i18n="cloudchat_arch_sub1">Principais decisões técnicas:</h4>
                     <ul style="list-style-type: none; padding-left: 0;">
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-check"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Backend
-                                em Node.js com padronização em JavaScript/TypeScript (Full Stack JS)</span>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-check" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="tcc_arch_dec1">Backend em Node.js com padronização em JavaScript/TypeScript (Full Stack JS)</span>
                         </li>
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-check"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Banco
-                                de dados relacional com MySQL</span>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-check" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="tcc_arch_dec2">Banco de dados relacional com MySQL</span>
                         </li>
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-check"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Comunicação
-                                via requisições HTTP</span>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-check" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="tcc_arch_dec3">Comunicação via requisições HTTP</span>
                         </li>
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-check"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Estrutura
-                                modular para facilitar manutenção e escalabilidade</span>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-check" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="tcc_arch_dec4">Estrutura modular para facilitar manutenção e escalabilidade</span>
                         </li>
                     </ul>
 
-                    <h4 style="color: var(--text-primary); margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;">
-                        Desafios enfrentados:</h4>
+                    <h4 style="color: var(--text-primary); margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;" data-i18n="cloudchat_arch_sub2">Desafios enfrentados:</h4>
                     <div style="display: flex; flex-direction: column; gap: 15px;">
-                        <div
-                            style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
-                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;">1.
-                                Performance e experiência no mobile</strong>
-                            <span style="color: var(--text-secondary);">Garantir uma navegação fluida e responsiva no
-                                React Native, com carregamento rápido de imagens e transições suaves.</span>
+                        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;" data-i18n="tcc_arch_chal1_title">1. Performance e experiência no mobile</strong>
+                            <span style="color: var(--text-secondary);" data-i18n="tcc_arch_chal1_desc">Garantir uma navegação fluida e responsiva no React Native, com carregamento rápido de imagens e transições suaves.</span>
                         </div>
-                        <div
-                            style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
-                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;">2.
-                                Gerenciamento de navegação (stack)</strong>
-                            <span style="color: var(--text-secondary);">Foi identificado um problema onde múltiplas
-                                leituras de QR Code acumulavam telas no histórico, prejudicando a navegação.<br><span
-                                    style="color: var(--accent); font-weight: 600;">→ Solução:</span> reestruturação do
-                                fluxo de navegação, evitando empilhamento desnecessário.</span>
+                        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;" data-i18n="tcc_arch_chal2_title">2. Gerenciamento de navegação (stack)</strong>
+                            <span style="color: var(--text-secondary);" data-i18n="tcc_arch_chal2_desc">Foi identificado um problema onde múltiplas leituras de QR Code acumulavam telas no histórico, prejudicando a navegação.<br><span style="color: var(--accent); font-weight: 600;">→ Solução:</span> reestruturação do fluxo de navegação, evitando empilhamento desnecessário.</span>
                         </div>
-                        <div
-                            style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
-                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;">3.
-                                Usabilidade da leitura de QR Code</strong>
-                            <span style="color: var(--text-secondary);">A interface inicial da câmera não era
-                                intuitiva.<br><span style="color: var(--accent); font-weight: 600;">→ Solução:</span>
-                                redesign da tela, destacando melhor a área de leitura.</span>
+                        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;" data-i18n="tcc_arch_chal3_title">3. Usabilidade da leitura de QR Code</strong>
+                            <span style="color: var(--text-secondary);" data-i18n="tcc_arch_chal3_desc">A interface inicial da câmera não era intuitiva.<br><span style="color: var(--accent); font-weight: 600;">→ Solução:</span> redesign da tela, destacando melhor a área de leitura.</span>
                         </div>
-                        <div
-                            style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
-                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;">4.
-                                Arquitetura escalável</strong>
-                            <span style="color: var(--text-secondary);">A aplicação foi projetada para permitir expansão
-                                futura, como adaptação para outros tipos de turismo (ex: fazendas, cafés, etc.).</span>
+                        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;" data-i18n="tcc_arch_chal4_title">4. Arquitetura escalável</strong>
+                            <span style="color: var(--text-secondary);" data-i18n="tcc_arch_chal4_desc">A aplicação foi projetada para permitir expansão futura, como adaptação para outros tipos de turismo (ex: fazendas, cafés, etc.).</span>
                         </div>
-                        <div
-                            style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
-                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;">5.
-                                Metodologia ágil</strong>
-                            <span style="color: var(--text-secondary);">O desenvolvimento foi incremental, começando com
-                                páginas estáticas (HTML/CSS/JS) e evoluindo para uma solução completa com React Native e
-                                backend integrado.</span>
+                        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;" data-i18n="tcc_arch_chal5_title">5. Metodologia ágil</strong>
+                            <span style="color: var(--text-secondary);" data-i18n="tcc_arch_chal5_desc">O desenvolvimento foi incremental, começando com páginas estáticas (HTML/CSS/JS) e evoluindo para uma solução completa com React Native e backend integrado.</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="glass-card content-block fade-in"
                     style="border-color: var(--accent); background: rgba(0, 242, 254, 0.05);">
-                    <h3 style="color: var(--text-primary);"><i class="fas fa-trophy" style="color: var(--accent);"></i>
-                        Resultados e Conclusão</h3>
+                    <h3 style="color: var(--text-primary);" data-i18n="cloudchat_res_title"><i class="fas fa-trophy" style="color: var(--accent);"></i> Resultados e Conclusão</h3>
 
-                    <p style="margin-bottom: 15px;">O aplicativo foi validado com usuários reais, que avaliaram a
-                        solução com notas entre 8 e 10, destacando principalmente:</p>
+                    <p style="margin-bottom: 15px;" data-i18n="tcc_res_p1">O aplicativo foi validado com usuários reais, que avaliaram a solução com notas entre 8 e 10, destacando principalmente:</p>
 
-                    <ul
-                        style="list-style-type: none; padding-left: 0; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap;">
-                        <li
-                            style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
-                            <i class="fas fa-star" style="color: #FFD700; margin-right: 8px;"></i>Facilidade de uso
+                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <li style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
+                            <i class="fas fa-star" style="color: #FFD700; margin-right: 8px;"></i><span data-i18n="tcc_res_li1">Facilidade de uso</span>
                         </li>
-                        <li
-                            style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
-                            <i class="fas fa-bolt" style="color: #FFD700; margin-right: 8px;"></i>Acesso rápido às
-                            informações
+                        <li style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
+                            <i class="fas fa-bolt" style="color: #FFD700; margin-right: 8px;"></i><span data-i18n="tcc_res_li2">Acesso rápido às informações</span>
                         </li>
-                        <li
-                            style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
-                            <i class="fas fa-magic" style="color: #FFD700; margin-right: 8px;"></i>Interface limpa e
-                            intuitiva
+                        <li style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
+                            <i class="fas fa-magic" style="color: #FFD700; margin-right: 8px;"></i><span data-i18n="tcc_res_li3">Interface limpa e intuitiva</span>
                         </li>
                     </ul>
 
-                    <p style="margin-bottom: 15px;">Os feedbacks coletados foram fundamentais para ajustes de UX/UI e
-                        melhorias na navegação, reforçando a importância de ciclos iterativos no desenvolvimento.</p>
+                    <p style="margin-bottom: 15px;" data-i18n="tcc_res_p2">Os feedbacks coletados foram fundamentais para ajustes de UX/UI e melhorias na navegação, reforçando a importância de ciclos iterativos no desenvolvimento.</p>
 
-                    <div
-                        style="background: linear-gradient(90deg, rgba(0, 242, 254, 0.1), transparent); padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid var(--accent);">
-                        <p style="margin: 0; color: var(--text-primary); font-weight: 600; font-size: 1.1rem;"><i
-                                class="fas fa-award" style="color: var(--accent); margin-right: 10px;"></i>O projeto foi
-                            aprovado com nota 9,39, demonstrando sua qualidade técnica e relevância prática.</p>
+                    <div style="background: linear-gradient(90deg, rgba(0, 242, 254, 0.1), transparent); padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid var(--accent);">
+                        <p style="margin: 0; color: var(--text-primary); font-weight: 600; font-size: 1.1rem;"><i class="fas fa-award" style="color: var(--accent); margin-right: 10px;"></i><span data-i18n="tcc_res_award">O projeto foi aprovado com nota 9,39, demonstrando sua qualidade técnica e relevância prática.</span></p>
                     </div>
 
-                    <h4 style="color: var(--text-primary); margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;">
-                        Principais aprendizados:</h4>
+                    <h4 style="color: var(--text-primary); margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;" data-i18n="cloudchat_res_sub">Principais aprendizados:</h4>
                     <ul style="list-style-type: none; padding-left: 0; margin-bottom: 20px;">
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-graduation-cap"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Importância
-                                da experiência do usuário em aplicações mobile</span>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-graduation-cap" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="tcc_res_learn1">Importância da experiência do usuário em aplicações mobile</span>
                         </li>
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-graduation-cap"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Estruturação
-                                de aplicações Full Stack com JavaScript</span>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-graduation-cap" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="tcc_res_learn2">Estruturação de aplicações Full Stack com JavaScript</span>
                         </li>
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-graduation-cap"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Aplicação
-                                prática de metodologias ágeis</span>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-graduation-cap" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="tcc_res_learn3">Aplicação prática de metodologias ágeis</span>
                         </li>
-                        <li
-                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-graduation-cap"
-                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span>Resolução
-                                de problemas reais com tecnologia</span>
+                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-graduation-cap" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="tcc_res_learn4">Resolução de problemas reais com tecnologia</span>
                         </li>
                     </ul>
 
-                    <p style="margin-bottom: 0; font-style: italic; color: var(--text-secondary);">Além disso, o projeto
-                        demonstrou ser escalável e adaptável para outros contextos, ampliando seu potencial de uso no
-                        mercado.</p>
+                    <p style="margin-bottom: 0; font-style: italic; color: var(--text-secondary);" data-i18n="tcc_res_concl">Além disso, o projeto demonstrou ser escalável e adaptável para outros contextos, ampliando seu potencial de uso no mercado.</p>
                 </div>
 
             </div>
@@ -398,8 +329,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Gabriel.Todos os direitos reservados.</p>
+        <p data-i18n="footer_text">&copy; 2026 Gabriel. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
 
     <!-- Use the same script for animations -->
     <script>
