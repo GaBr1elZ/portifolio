@@ -13,7 +13,7 @@ const translations = {
         "hero_desc": "Especialista em construir experiências web e mobile modernas e de alta performance. Transformando ideias em interfaces dinâmicas e escaláveis.",
         "hero_btn_projects": "Ver Projetos",
         "hero_btn_contact": "Fale Comigo",
-        
+
         // About Section
         "about_title": "Sobre Mim",
         "about_p1": "Desenvolvedor Full-Stack com foco em React, com experiência na construção e manutenção de interfaces web para sistemas empresariais. Atuo no desenvolvimento de dashboards, fluxos de interface e funcionalidades integradas a APIs REST utilizando JavaScript (ES6+), HTML e CSS. Atualmente contribuo para a modernização de uma plataforma de atendimento omnichannel, participando da migração gradual da interface construída em jQuery e Bootstrap para uma arquitetura baseada em React e componentização.",
@@ -123,6 +123,7 @@ const translations = {
         "project3_desc": "Plataforma SaaS fullstack para monitoramento contínuo de uptime e performance. Conta com dashboard dinâmico e sistema de notificações automatizadas.",
         "sitewatch_meta_saas": "SaaS Fullstack",
         "sitewatch_btn_code": "Ver no GitHub",
+        "sitewatch_btn_access": "Acesse o Site",
         "sitewatch_back": "Voltar para o Portfólio",
         "sitewatch_prob_title": "O Problema",
         "sitewatch_prob_p1": "Garantir que um sistema web esteja sempre online é crítico para qualquer negócio. Porém, descobrir que o seu site caiu através da reclamação de um cliente gera uma péssima experiência e prejuízos.",
@@ -164,7 +165,7 @@ const translations = {
         "hero_desc": "Specialist in building modern, high-performance web and mobile experiences. Turning ideas into dynamic and scalable interfaces.",
         "hero_btn_projects": "View Projects",
         "hero_btn_contact": "Contact Me",
-        
+
         // About Section
         "about_title": "About Me",
         "about_p1": "Full-Stack Developer focused on React, with experience in building and maintaining web interfaces for enterprise systems. I work on developing dashboards, interface flows, and features integrated with REST APIs using JavaScript (ES6+), HTML, and CSS. I am currently contributing to the modernization of an omnichannel customer service platform, participating in the gradual migration of the interface built in jQuery and Bootstrap to a React and component-based architecture.",
@@ -274,6 +275,7 @@ const translations = {
         "project3_desc": "Fullstack SaaS platform for continuous uptime and performance monitoring. Features a dynamic dashboard and automated notification system.",
         "sitewatch_meta_saas": "Fullstack SaaS",
         "sitewatch_btn_code": "View on GitHub",
+        "sitewatch_btn_access": "Access Site",
         "sitewatch_back": "Back to Portfolio",
         "sitewatch_prob_title": "The Problem",
         "sitewatch_prob_p1": "Ensuring a web system is always online is critical for any business. However, discovering your site is down through a customer complaint generates a terrible experience and financial losses.",

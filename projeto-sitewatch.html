@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Detalhes do Projeto SiteWatch - Monitoramento de Uptime desenvolvido por Gabriel.">
+    <meta name="description"
+        content="Detalhes do Projeto SiteWatch - Monitoramento de Uptime desenvolvido por Gabriel.">
     <title>SiteWatch | Projeto de Gabriel</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts -->
@@ -135,7 +136,8 @@
                 <h1 class="project-title" data-i18n="project3_title">SiteWatch - Monitoramento de Uptime</h1>
                 <div class="project-meta">
                     <span><i class="far fa-calendar-alt"></i> 2026</span>
-                    <span><i class="fas fa-server"></i> <span data-i18n="sitewatch_meta_saas">SaaS Fullstack</span></span>
+                    <span><i class="fas fa-server"></i> <span data-i18n="sitewatch_meta_saas">SaaS
+                            Fullstack</span></span>
                 </div>
                 <div class="tech-tags" style="justify-content: center; margin-bottom: 30px;">
                     <span>Next.js 15</span>
@@ -144,27 +146,40 @@
                     <span>Prisma</span>
                     <span>PostgreSQL</span>
                 </div>
-                <div class="hero-buttons" style="justify-content: center;">
-                    <a href="https://github.com/GaBr1elZ/sitewatch" target="_blank" class="btn-primary"><i class="fab fa-github"></i> <span data-i18n="sitewatch_btn_code">Ver no GitHub</span></a>
+                <div style="display: flex; flex-direction: row; gap: 20px;justify-content: center;">
+                    <div class="hero-buttons" style="justify-content: center;">
+                        <a href="https://github.com/GaBr1elZ/sitewatch" target="_blank" class="btn-primary"><i
+                                class="fab fa-github"></i> <span data-i18n="sitewatch_btn_code">Ver no GitHub</span></a>
+                    </div>
+                    <div class="hero-buttons" style="justify-content: center;">
+                        <a href="https://sitewatch-app-eight.vercel.app/" target="_blank" class="btn-primary"><i
+                                class="far fa-eye"></i> <span data-i18n="sitewatch_btn_access">Acesse o Site</span></a>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <!-- Project Content -->
         <section id="detalhes" class="section-padding">
             <div class="content-section">
-                <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> <span data-i18n="sitewatch_back">Voltar para o Portfólio</span></a>
+                <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> <span
+                        data-i18n="sitewatch_back">Voltar para o Portfólio</span></a>
 
                 <div class="glass-card content-block fade-in">
                     <h3 data-i18n="sitewatch_prob_title"><i class="fas fa-exclamation-circle"></i> O Problema</h3>
-                    <p data-i18n="sitewatch_prob_p1">Garantir que um sistema web esteja sempre online é crítico para qualquer negócio. Porém, descobrir que o seu site caiu através da reclamação de um cliente gera uma péssima experiência e prejuízos.</p>
-                    <p data-i18n="sitewatch_prob_p2">A necessidade era construir um sistema autônomo e confiável que não apenas verificasse o status de múltiplas URLs em intervalos regulares, mas que também armazenasse o histórico de latência para análise e alertasse os responsáveis instantaneamente.</p>
+                    <p data-i18n="sitewatch_prob_p1">Garantir que um sistema web esteja sempre online é crítico para
+                        qualquer negócio. Porém, descobrir que o seu site caiu através da reclamação de um cliente gera
+                        uma péssima experiência e prejuízos.</p>
+                    <p data-i18n="sitewatch_prob_p2">A necessidade era construir um sistema autônomo e confiável que não
+                        apenas verificasse o status de múltiplas URLs em intervalos regulares, mas que também
+                        armazenasse o histórico de latência para análise e alertasse os responsáveis instantaneamente.
+                    </p>
                 </div>
 
                 <div class="app-gallery fade-in">
                     <div class="gallery-grid">
                         <a href="img/site-watch-1.png" class="glightbox" data-gallery="sitewatch-gallery">
-                            <img src="img/site-watch-1.png" alt="Dashboard Principal do SiteWatch" class="app-screenshot">
+                            <img src="img/site-watch-1.png" alt="Dashboard Principal do SiteWatch"
+                                class="app-screenshot">
                         </a>
                         <a href="img/site-watch-2.png" class="glightbox" data-gallery="sitewatch-gallery">
                             <img src="img/site-watch-2.png" alt="Página de Detalhes de um Site" class="app-screenshot">
@@ -205,53 +220,107 @@
 
                 <div class="glass-card content-block fade-in">
                     <h3 data-i18n="sitewatch_sol_title"><i class="fas fa-lightbulb"></i> A Solução</h3>
-                    <p data-i18n="sitewatch_sol_p1">O SiteWatch foi desenvolvido como uma plataforma SaaS baseada em microsserviços. O Backend (Node.js) atua como um 'motor' contínuo de checagens usando cron jobs assíncronos.</p>
-                    <p data-i18n="sitewatch_sol_p2">O Frontend (Next.js) fornece um dashboard moderno e analítico onde o usuário cadastra seus sites e visualiza o uptime e o tempo de resposta através de gráficos detalhados construídos com Recharts.</p>
-                    <p data-i18n="sitewatch_sol_p3">Quando uma queda é detectada, o sistema automaticamente abre um 'Incidente' e dispara alertas via Webhooks (Discord/Slack) e e-mails transacionais (Resend).</p>
+                    <p data-i18n="sitewatch_sol_p1">O SiteWatch foi desenvolvido como uma plataforma SaaS baseada em
+                        microsserviços. O Backend (Node.js) atua como um 'motor' contínuo de checagens usando cron jobs
+                        assíncronos.</p>
+                    <p data-i18n="sitewatch_sol_p2">O Frontend (Next.js) fornece um dashboard moderno e analítico onde o
+                        usuário cadastra seus sites e visualiza o uptime e o tempo de resposta através de gráficos
+                        detalhados construídos com Recharts.</p>
+                    <p data-i18n="sitewatch_sol_p3">Quando uma queda é detectada, o sistema automaticamente abre um
+                        'Incidente' e dispara alertas via Webhooks (Discord/Slack) e e-mails transacionais (Resend).</p>
                 </div>
 
                 <div class="glass-card content-block fade-in">
-                    <h3 data-i18n="sitewatch_arch_title"><i class="fas fa-cogs"></i> Arquitetura e Desafios Técnicos</h3>
-                    <p data-i18n="sitewatch_arch_p1">Desenvolver um sistema de monitoramento contínuo exige atenção redobrada à performance e gerenciamento de processos assíncronos.</p>
+                    <h3 data-i18n="sitewatch_arch_title"><i class="fas fa-cogs"></i> Arquitetura e Desafios Técnicos
+                    </h3>
+                    <p data-i18n="sitewatch_arch_p1">Desenvolver um sistema de monitoramento contínuo exige atenção
+                        redobrada à performance e gerenciamento de processos assíncronos.</p>
 
-                    <h4 style="color: var(--text-primary); margin-top: 20px; margin-bottom: 15px; font-size: 1.2rem;" data-i18n="sitewatch_arch_sub1">Principais Tecnologias:</h4>
+                    <h4 style="color: var(--text-primary); margin-top: 20px; margin-bottom: 15px; font-size: 1.2rem;"
+                        data-i18n="sitewatch_arch_sub1">Principais Tecnologias:</h4>
                     <ul style="list-style-type: none; padding-left: 0;">
-                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-check" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="sitewatch_arch_dec1">Frontend hibrído utilizando as novas features do Next.js 15 (App Router) e React 19.</span></li>
-                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-check" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="sitewatch_arch_dec2">Estilização ágil com Tailwind CSS v4 para uma interface 'Glassmorphism' fluida.</span></li>
-                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-check" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="sitewatch_arch_dec3">Backend Express blindado com JWT e bcrypt para segurança de usuários.</span></li>
-                        <li style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
-                            <i class="fas fa-check" style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span data-i18n="sitewatch_arch_dec4">Banco de dados PostgreSQL orquestrado via Prisma ORM.</span></li>
+                        <li
+                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-check"
+                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span
+                                data-i18n="sitewatch_arch_dec1">Frontend hibrído utilizando as novas features do Next.js
+                                15 (App Router) e React 19.</span>
+                        </li>
+                        <li
+                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-check"
+                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span
+                                data-i18n="sitewatch_arch_dec2">Estilização ágil com Tailwind CSS v4 para uma interface
+                                'Glassmorphism' fluida.</span>
+                        </li>
+                        <li
+                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-check"
+                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span
+                                data-i18n="sitewatch_arch_dec3">Backend Express blindado com JWT e bcrypt para segurança
+                                de usuários.</span>
+                        </li>
+                        <li
+                            style="color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: flex-start;">
+                            <i class="fas fa-check"
+                                style="color: var(--accent); margin-right: 10px; margin-top: 5px; font-size: 0.9em;"></i><span
+                                data-i18n="sitewatch_arch_dec4">Banco de dados PostgreSQL orquestrado via Prisma
+                                ORM.</span>
+                        </li>
                     </ul>
 
-                    <h4 style="color: var(--text-primary); margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;" data-i18n="sitewatch_arch_sub2">Desafios Enfrentados:</h4>
+                    <h4 style="color: var(--text-primary); margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem;"
+                        data-i18n="sitewatch_arch_sub2">Desafios Enfrentados:</h4>
                     <div style="display: flex; flex-direction: column; gap: 15px;">
-                        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
-                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;" data-i18n="sitewatch_arch_chal1_title">1. Múltiplos Cron Jobs Dinâmicos</strong>
-                            <span style="color: var(--text-secondary);" data-i18n="sitewatch_arch_chal1_desc">Como cada usuário pode definir se quer checar seu site a cada 1, 5 ou 15 minutos, criar cron jobs fixos não era viável.<br><span style='color: var(--accent); font-weight: 600;'>→ Solução:</span> Implementei um gerenciador de rotinas onde cada site possui seu próprio cron atrelado no node-cron dinamicamente.</span>
+                        <div
+                            style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;"
+                                data-i18n="sitewatch_arch_chal1_title">1. Múltiplos Cron Jobs Dinâmicos</strong>
+                            <span style="color: var(--text-secondary);" data-i18n="sitewatch_arch_chal1_desc">Como cada
+                                usuário pode definir se quer checar seu site a cada 1, 5 ou 15 minutos, criar cron jobs
+                                fixos não era viável.<br><span style='color: var(--accent); font-weight: 600;'>→
+                                    Solução:</span> Implementei um gerenciador de rotinas onde cada site possui seu
+                                próprio cron atrelado no node-cron dinamicamente.</span>
                         </div>
-                        <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
-                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;" data-i18n="sitewatch_arch_chal2_title">2. Visualização de Dados Temporais</strong>
-                            <span style="color: var(--text-secondary);" data-i18n="sitewatch_arch_chal2_desc">Plotar o histórico de respostas HTTP de forma clara.<br><span style='color: var(--accent); font-weight: 600;'>→ Solução:</span> Utilização da biblioteca Recharts com formatação customizada de eixos X/Y para apresentar latência (ms) de forma amigável.</span>
+                        <div
+                            style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent);">
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;"
+                                data-i18n="sitewatch_arch_chal2_title">2. Visualização de Dados Temporais</strong>
+                            <span style="color: var(--text-secondary);" data-i18n="sitewatch_arch_chal2_desc">Plotar o
+                                histórico de respostas HTTP de forma clara.<br><span
+                                    style='color: var(--accent); font-weight: 600;'>→ Solução:</span> Utilização da
+                                biblioteca Recharts com formatação customizada de eixos X/Y para apresentar latência
+                                (ms) de forma amigável.</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="glass-card content-block fade-in"
                     style="border-color: var(--accent); background: rgba(0, 242, 254, 0.05);">
-                    <h3 style="color: var(--text-primary);" data-i18n="sitewatch_res_title"><i class="fas fa-rocket" style="color: var(--accent);"></i> Resultados e Evolução</h3>
+                    <h3 style="color: var(--text-primary);" data-i18n="sitewatch_res_title"><i class="fas fa-rocket"
+                            style="color: var(--accent);"></i> Resultados e Evolução</h3>
 
-                    <p style="margin-bottom: 15px;" data-i18n="sitewatch_res_p1">O SiteWatch consolidou-se como a aplicação mais robusta do portfólio, integrando comunicação ponta a ponta com TypeScript e práticas modernas de desenvolvimento web.</p>
+                    <p style="margin-bottom: 15px;" data-i18n="sitewatch_res_p1">O SiteWatch consolidou-se como a
+                        aplicação mais robusta do portfólio, integrando comunicação ponta a ponta com TypeScript e
+                        práticas modernas de desenvolvimento web.</p>
 
-                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap;">
-                        <li style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
-                            <i class="fas fa-heartbeat" style="color: #FFD700; margin-right: 8px;"></i><span data-i18n="sitewatch_res_li1">Monitoramento Autônomo 24/7</span></li>
-                        <li style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
-                            <i class="fas fa-bell" style="color: #FFD700; margin-right: 8px;"></i><span data-i18n="sitewatch_res_li2">Integração Perfeita de Notificações</span></li>
-                        <li style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
-                            <i class="fas fa-tachometer-alt" style="color: #FFD700; margin-right: 8px;"></i><span data-i18n="sitewatch_res_li3">Dashboard de Alta Performance</span></li>
+                    <ul
+                        style="list-style-type: none; padding-left: 0; margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <li
+                            style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
+                            <i class="fas fa-heartbeat" style="color: #FFD700; margin-right: 8px;"></i><span
+                                data-i18n="sitewatch_res_li1">Monitoramento Autônomo 24/7</span>
+                        </li>
+                        <li
+                            style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
+                            <i class="fas fa-bell" style="color: #FFD700; margin-right: 8px;"></i><span
+                                data-i18n="sitewatch_res_li2">Integração Perfeita de Notificações</span>
+                        </li>
+                        <li
+                            style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; color: var(--text-primary); font-size: 0.95rem;">
+                            <i class="fas fa-tachometer-alt" style="color: #FFD700; margin-right: 8px;"></i><span
+                                data-i18n="sitewatch_res_li3">Dashboard de Alta Performance</span>
+                        </li>
                     </ul>
                 </div>
 
